@@ -16,8 +16,8 @@ export default Ember.Route.extend({
       item.save();
     },
 
-    createItem (data) {
-     let item = this.get('store').createRecord('item', data);
+    createItem (newItem) {
+     let item = this.get('store').createRecord('item', newItem);
       return item.save();
     },
   },

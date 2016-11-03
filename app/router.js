@@ -10,7 +10,7 @@ Router.map(function () {
   // this.route('list');
   // sibling route for unique view state
   // function(){route} is for imbedded view state
-  this.route('list', { path: '/lists/:list_id' });
+  this.route('list', { path: '/lists/:list_id/' });
 });
 
 export default Router;

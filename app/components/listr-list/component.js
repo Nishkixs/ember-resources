@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  newItem: {
-   content: null,
+  form: {
+   text: null,
    done: false,
   },
 
@@ -24,10 +24,10 @@ export default Ember.Component.extend({
     },
 
     createItem () {
-      let data = this.get('newItem');
-      data.list = this.get('list');
-      this.sendAction('createItem', data);
-      this.set('newItem.content', null);
+      let newItem = this.get('form');
+      newItem.list = this.get('list');
+      this.sendAction('createItem', newItem);
+      this.set('form.text', null);
     },
   },
 });

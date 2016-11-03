@@ -7,6 +7,8 @@
 
 
 <form {{action "createItem" on="submit"}}>
-  {{input placeholder="New item"
-          value=newItem.content}}
+  {{input placeholder="New item" class='input-group form-control' value=form.text}}
 </form>
+
+
+<h1>{{form}}</h1>
